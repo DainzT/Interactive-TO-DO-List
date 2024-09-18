@@ -19,8 +19,9 @@ body {
   width: 10rem;
   height: 10rem;
   top: 1.5rem;
-  left: 20rem;
+  left: 24rem;
   rotate: 10deg;
+  transition: 0.5s ease-in-out;
 }
 
 #sleepy:hover{
@@ -41,7 +42,7 @@ body {
   }
 
   #ListContainer {
-  top: 1.2rem;
+  top: 1.5rem;
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
@@ -71,12 +72,15 @@ body {
   }
 
   #new-task {
+    width: 14.7rem;
     outline: none;
     border: none;
     margin-top: 0.5rem;
     border: none;
     border-bottom: 0.1rem solid black;
     font-size: 17px;
+    position: relative;
+    left: 0.9rem;
   }
 
   #new-date{
@@ -99,6 +103,7 @@ body {
     color: #3c40419e;
   }
   #add {
+  left: 0.8rem;
   cursor: pointer;
   position: relative;
   top: -0.1rem;
@@ -258,15 +263,58 @@ body {
  }
  
   #time{
-    width: 1.7rem;
-    top: 1.2rem;
-    left: 27.8rem;
+    width: 1.1rem;
+    top: 1.25rem;
+    left: 28.2rem;
     position: absolute;
     background-color: #2b282800;
     border: none;
     outline: none;
   }
   
+  #Sort {
+    transform: scale(1.5);
+    position: relative;
+    left: 2.7rem;
+    top: -28.3rem;
+    background-color: #2b282800;
+    border: #2b282800;
+    transition: 0.5s ease-in-out;
+  }
+
+  #Sort:hover {
+    transform: scale(1.8);
+    color: rgb(53, 94, 62);
+  }
+
+  #Options {
+    overflow-y: visible;
+    height: 1rem;
+    top: 8.3rem;
+    left: 4.4rem;
+    width: 4.5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+  }
+  #Past, #Today, #Later, #Tom {
+    margin-left: 0.5rem;
+    position:relative;
+    width: 8.9rem;
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0.1rem solid rgb(125, 150, 81);
+    border-bottom: 0;
+    background-color: #2b282800;
+    font-weight: 100;
+  }
+  #Past:hover, #Today:hover, #Later:hover, #Tom:hover{
+    color: green;
+    font-weight: 500;
+  }
 }
 @media (max-width: 800px){
   #container {
